@@ -1,1 +1,169 @@
-<h1> test </h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 8px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            font-size: 22px;
+            color: #333;
+        }
+
+        .product-card p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .product-card .price {
+            font-size: 20px;
+            color: #28a745;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .product-card .buy-button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-card .buy-button:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Our Online Store</h1>
+    </header>
+
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="main-content">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250x200" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Great quality product for all your needs.</p>
+            <p class="price">$19.99</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250x200" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Top-rated and popular item in our store.</p>
+            <p class="price">$29.99</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250x200" alt="Product 3">
+            <h3>Product 3</h3>
+            <p>High-end product for premium customers.</p>
+            <p class="price">$49.99</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Your Online Store. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
+
